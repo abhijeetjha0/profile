@@ -4,12 +4,13 @@ import Loader from "../components/Loader";
 import Layout from "../Layout";
 
 const routes = [{
+    Component: Layout,
+    ErrorBoundary,
     loader: async () => {
         // TODO: Add some API call here
         return {};
     },
-    Component: Layout,
-    ErrorBoundary,
+    path: '/profile',
     children: [
         {
             index: true,
