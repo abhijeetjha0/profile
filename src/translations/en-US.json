@@ -1,0 +1,62 @@
+{
+  "personalInfo": {
+    "name": "Abhijit Kumar Jha",
+    "title": "Senior Software Engineer",
+    "email": "abhijeetjha0@hotmail.com",
+    "phone": "+919521865369",
+    "linkedin": "linkedin.com/in/abhijeetjha0",
+    "location": "Jaipur, India"
+  },
+  "sections": {
+    "experience": "Professional Experience",
+    "skills": "Skills",
+    "education": "Education",
+    "about": "About Me"
+  },
+  "about": {
+    "description": "Leading UI development and crafting responsive web designs with expertise in React, Ember.js, and TypeScript. Focused on building efficient, high-performance web applications that are localized, accessible, and cross-browser compatible."
+  },
+  "experience": [
+    {
+      "company": "Metacube Software Pvt. Ltd.",
+      "role": "Senior Software Engineer",
+      "period": "Apr 2023 - Present",
+      "location": "Jaipur, India",
+      "highlights": [
+        "Mentored and led a team of 7-10 junior developers, improving team productivity and successfully releasing products for a NASDAQ-listed USA client.",
+        "Designed multiple responsive web applications with ReactJS, reducing load times by 30%.",
+        "Developed localized (l10n) and web-accessible pages across Chromium, Apple Webkit, and Gecko platforms.",
+        "Utilized Vite, Rollup, Webpack, and Babel with tree-shaking to optimize UI bundle sizes.",
+        "Wrote Jest-based tests achieving 99% code coverage.",
+        "Established coding standards using ESLint, Stylelint, and SonarQube.",
+        "Created CI/CD scripts using JavaScript, YAML, Maven, and GitLab."
+      ]
+    },
+    {
+      "company": "Metacube Software Pvt. Ltd.",
+      "role": "Software Engineer",
+      "period": "Jan 2020 - Mar 2023",
+      "location": "Jaipur, India",
+      "highlights": [
+        "Utilized React and Ember.js to deliver robust and efficient web applications.",
+        "Designed and integrated RESTful APIs to optimize system interoperability.",
+        "Played a critical role in project delivery through Agile methodologies.",
+        "Worked on several SSO applications for a NASDAQ-listed USA client.",
+        "Received several awards and appreciation for meeting release deadlines and exceeding expectations."
+      ]
+    }
+  ],
+  "skills": {
+    "frameworks": ["React", "React Router", "Jest", "Ember.js", "jQuery"],
+    "languages": ["JavaScript", "TypeScript"],
+    "buildTools": ["Vite", "Webpack", "Babel", "Rollup"],
+    "webTech": ["HTML5", "Bootstrap", "Sass", "CSS"],
+    "linting": ["ESLint", "Stylelint"],
+    "others": ["Git", "Localization", "Responsive Web Design", "Agile Methodologies", "Jira", "Confluence", "Cross Browser Extensions"]
+  },
+  "education": {
+    "degree": "B.Tech in IT",
+    "institution": "Swami Keshwanand Institute of Technology, Jaipur",
+    "period": "Aug 2016 - Jul 2020"
+  }
+}

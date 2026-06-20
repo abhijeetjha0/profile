@@ -1,10 +1,14 @@
 import './styles/app.scss';
 import { Outlet } from 'react-router'
+import NavigationBar from './components/NavigationBar';
 
 function Layout() {
     return (
         <>
-            <Outlet />
+            <NavigationBar />
+            <main>
+                <Outlet />
+            </main>
         </>
     )
 }

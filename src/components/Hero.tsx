@@ -1,0 +1,28 @@
+import { Container, Row, Col } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
+
+export default function Hero() {
+  const { t } = useTranslation();
+
+  return (
+    <div id="home" className="bg-light py-5 mb-5">
+      <Container>
+        <Row className="align-items-center">
+          <Col md={8}>
+            <h1 className="display-3 fw-bold">{t('personalInfo.name')}</h1>
+            <h2 className="text-secondary mb-4">{t('personalInfo.title')}</h2>
+            <p className="lead">{t('about.description')}</p>
+          </Col>
+          <Col md={4} className="text-md-end mt-4 mt-md-0">
+            <div className="contact-info">
+              <p className="mb-1"><strong>Email:</strong> <a href={`mailto:${t('personalInfo.email')}`}>{t('personalInfo.email')}</a></p>
+              <p className="mb-1"><strong>Phone:</strong> {t('personalInfo.phone')}</p>
+              <p className="mb-1"><strong>Location:</strong> {t('personalInfo.location')}</p>
+              <p className="mb-0"><strong>LinkedIn:</strong> <a href={`https://${t('personalInfo.linkedin')}`} target="_blank" rel="noopener noreferrer">{t('personalInfo.linkedin')}</a></p>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </div>
+  );
+}
