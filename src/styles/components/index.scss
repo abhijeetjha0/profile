@@ -1,0 +1,90 @@
+.portfolio-content {
+  scroll-behavior: smooth;
+
+  section {
+    padding: 4rem 0;
+  }
+
+  .hero-section {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-info {
+    a {
+      text-decoration: none;
+      color: inherit;
+      &:hover {
+        color: var(--bs-primary);
+      }
+    }
+  }
+
+  .card {
+    transition: transform 0.2s ease-in-out;
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  .badge {
+    font-size: 0.9rem;
+  }
+}
+
+// Ensure smooth scrolling for navigation links
+html {
+  scroll-behavior: smooth;
+}
+
+// Adjust padding for anchor links to account for sticky header
+#about, #experience, #skills, #education {
+  scroll-margin-top: 70px;
+}
+
+// Skills Section UX & Visual Enhancements
+.skills-section {
+  background: linear-gradient(180deg, rgba(248, 250, 252, 0.6) 0%, rgba(241, 245, 249, 1) 100%);
+
+  .skill-card {
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
+    background: #ffffff;
+    border: 1px solid rgba(226, 232, 240, 0.8) !important;
+
+    .card-accent-bar {
+      height: 4px;
+      width: 100%;
+    }
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.08), 0 4px 16px -4px rgba(0, 0, 0, 0.04) !important;
+    }
+  }
+
+  .skill-pill {
+    background-color: var(--accent-bg, #f1f5f9);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    display: inline-flex;
+    align-items: center;
+
+    &:hover {
+      background-color: #ffffff;
+      border-color: var(--accent-color, #2563eb);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+      transform: translateY(-2px);
+    }
+  }
+
+  .btn-outline-secondary {
+    color: #475569;
+    border-color: #e2e8f0;
+    &:hover {
+      background-color: #f1f5f9;
+      color: #0f172a;
+    }
+  }
+}
+
