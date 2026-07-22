@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 export default function Education() {
   const { t } = useTranslation();
-  const education = t('education', { returnObjects: true }) as any;
+  const education = t('education', { returnObjects: true }) as Record<string, string>;
 
   return (
     <section id="education" className="py-5 mb-5">

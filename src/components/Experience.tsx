@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 export default function Experience() {
   const { t } = useTranslation();
-  const experiences = t('experience', { returnObjects: true }) as any[];
+  const experiences = t('experience', { returnObjects: true }) as { role: string; company: string; period: string; location: string; highlights: string[] }[];
 
   return (
     <section id="experience" className="py-5">
