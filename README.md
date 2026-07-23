@@ -1,7 +1,7 @@
 # Abhijit Kumar Jha - Portfolio Profile
 
 [![Deploy to GitHub Pages](https://github.com/abhijeetjha0/profile/actions/workflows/deploy.yml/badge.svg)](https://github.com/abhijeetjha0/profile/actions/workflows/deploy.yml)
-[![Code Coverage](https://img.shields.io/endpoint?url=https://abhijeetjha0.github.io/profile/coverage/badge.json)](https://abhijeetjha0.github.io/profile/coverage/)
+[![Code Coverage](https://abhijeetjha0.github.io/profile/coverage/badge.svg)](https://abhijeetjha0.github.io/profile/coverage/)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D24.12.0-blue)](https://nodejs.org/)
 
 A responsive React portfolio application built with TypeScript, Vite, React-Bootstrap, and `react-i18next` for internationalization and localization.
