@@ -4,7 +4,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router'
 import routes from './routes/index.tsx';
 import './i18n';
 
-const router = createBrowserRouter(routes);
+const basename = typeof import.meta !== 'undefined' && (import.meta as any).env ? (import.meta as any).env.BASE_URL : '/abhijeetjha0/';
+const router = createBrowserRouter(routes, { basename });
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>

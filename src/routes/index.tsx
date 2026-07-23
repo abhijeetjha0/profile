@@ -10,7 +10,7 @@ const routes = [{
         // TODO: Add some API call here
         return {};
     },
-    path: '/profile',
+    path: '/',
     children: [
         {
             index: true,

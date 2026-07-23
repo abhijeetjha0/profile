@@ -17,7 +17,7 @@ const config: Config = {
     testPathIgnorePatterns: ['!/tests/'],
     testMatch: ['**/*.test.(ts|tsx)'],
     collectCoverage: true,
-    collectCoverageFrom: ['src/**/*.{ts,tsx}'],
+    collectCoverageFrom: ['src/**/*.{ts,tsx}', '!src/main.tsx'],
     coverageDirectory: 'coverage',
     coverageReporters: ['text', 'text-summary', 'lcov', 'json-summary'],
     reporters: ['default']
