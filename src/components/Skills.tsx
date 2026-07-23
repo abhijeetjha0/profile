@@ -1,4 +1,4 @@
-import { ReactNode, useState } from 'react';
+import { ReactNode, useState, useMemo } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 
@@ -16,7 +16,7 @@ export default function Skills() {
   const skills = (t('skills', { returnObjects: true }) || {}) as Record<string, string[]>;
   const [activeFilter, setActiveFilter] = useState<string>('all');
 
-  const categories: CategoryConfig[] = [
+  const categories: CategoryConfig[] = useMemo(() => [
     {
       id: 'frameworks',
       label: 'Libraries & Frameworks',
@@ -96,13 +96,17 @@ export default function Skills() {
         </svg>
       ),
     },
-  ];
+  ], [skills.frameworks, skills.languages, skills.webTech, skills.buildTools, skills.linting, skills.others]);
 
-  const filteredCategories = activeFilter === 'all'
-    ? categories
-    : categories.filter(c => c.id === activeFilter);
+  const filteredCategories = useMemo(() => {
+    return activeFilter === 'all'
+      ? categories
+      : categories.filter(c => c.id === activeFilter);
+  }, [activeFilter, categories]);
 
-  const totalSkillsCount = categories.reduce((sum, cat) => sum + (cat.data?.length || 0), 0);
+  const totalSkillsCount = useMemo(() => {
+    return categories.reduce((sum, cat) => sum + (cat.data?.length || 0), 0);
+  }, [categories]);
 
   return (
     <section id="skills" className="py-5 skills-section">
