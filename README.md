@@ -77,17 +77,6 @@ Senior Software Engineer with **5+ years of experience** leading UI development 
 - **B.Tech in Information Technology** (Aug 2016 - Jul 2020)  
   *Swami Keshwanand Institute of Technology (SKIT), Jaipur, India*
 
----
-
-## 📈 GitHub Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=abhijeetjha0&show_icons=true&theme=tokyonight&count_private=true" alt="Abhijit's GitHub Stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhijeetjha0&layout=compact&theme=tokyonight" alt="Top Languages" width="48%" />
-</div>
-
----
-
 ## 📬 Connect With Me
 
 - 🌐 **Portfolio Website**: [https://abhijeetjha0.github.io/abhijeetjha0/](https://abhijeetjha0.github.io/abhijeetjha0/)
@@ -96,43 +85,3 @@ Senior Software Engineer with **5+ years of experience** leading UI development 
 - ✉️ **Email**: [abhijeetjha0@hotmail.com](mailto:abhijeetjha0@hotmail.com)
 
 ---
-
-<details>
-<summary>🛠️ <b>Developer Setup & Local Build Instructions</b></summary>
-
-### Prerequisites
-- Node.js `^24.12.0` (managed via `.nvmrc`)
-
-### Local Commands
-
-```bash
-# Install dependencies
-npm install
-
-# Run development server
-npm run dev
-
-# Run unit test suite (automatically collects & prints coverage)
-npm test
-
-# Run tests matching a specific pattern
-npm run test-filter -- Experience
-
-# Run tests in watch mode
-npm run test-watch
-
-# Build production bundle
-npm run build
-```
-
-### CI/CD Deployment Pipeline
-
-Automated via GitHub Actions ([`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)):
-
-1. **Dependency Installation**: `npm ci`
-2. **Mandatory Test Execution**: `npm test` runs the unit test suite and generates coverage report.
-3. **Dynamic Badge Generation**: `node scripts/generate-coverage-badge.js` generates `badge.json` & `badge.svg`.
-4. **Application Build**: `npm run build` compiles Vite bundle.
-5. **Deployment**: Deploys `dist` to GitHub Pages.
-
-</details>
