@@ -38,8 +38,14 @@ jobs:
       - name: Run tests
         run: npm test
 
+      - name: Generate dynamic coverage badge
+        run: node scripts/generate-coverage-badge.js
+
       - name: Build
         run: npm run build
+
+      - name: Copy coverage report to dist
+        run: cp -r coverage/lcov-report dist/coverage
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
