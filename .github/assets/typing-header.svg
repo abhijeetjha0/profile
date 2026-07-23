@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 40" width="620" height="40">
+  <style>
+    .typing-text {
+      font-family: 'Fira Code', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+      font-size: 20px;
+      font-weight: 600;
+      fill: #2563EB;
+    }
+    
+    @media (prefers-color-scheme: dark) {
+      .typing-text {
+        fill: #60A5FA;
+      }
+    }
+
+    .phrase {
+      opacity: 0;
+      animation: cycle 9s infinite;
+    }
+
+    .phrase-1 { animation-delay: 0s; }
+    .phrase-2 { animation-delay: 3s; }
+    .phrase-3 { animation-delay: 6s; }
+
+    @keyframes cycle {
+      0% { opacity: 0; transform: translateY(4px); }
+      4% { opacity: 1; transform: translateY(0); }
+      29% { opacity: 1; transform: translateY(0); }
+      33% { opacity: 0; transform: translateY(-4px); }
+      100% { opacity: 0; }
+    }
+  </style>
+
+  <g class="phrase phrase-1">
+    <text x="0" y="26" class="typing-text">Senior Software Engineer</text>
+  </g>
+  <g class="phrase phrase-2">
+    <text x="0" y="26" class="typing-text">React &amp; TypeScript Specialist</text>
+  </g>
+  <g class="phrase phrase-3">
+    <text x="0" y="26" class="typing-text">UI Performance, L10n &amp; Accessibility</text>
+  </g>
+</svg>

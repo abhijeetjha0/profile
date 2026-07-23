@@ -1,18 +1,16 @@
 # Hi there, I'm Abhijit Kumar Jha 👋
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=2563EB&center=false&vCenter=false&width=600&lines=Senior+Software+Engineer;React+%26+TypeScript+Specialist;UI+Performance+%26+L10n+Architect" alt="Typing SVG" /></a>
+<img src="./.github/assets/typing-header.svg" width="620" alt="Senior Software Engineer | React &amp; TypeScript Specialist | UI Performance, L10n &amp; Accessibility" />
 
-[![Deploy Status](https://github.com/abhijeetjha0/abhijeetjha0/actions/workflows/deploy.yml/badge.svg)](https://github.com/abhijeetjha0/abhijeetjha0/actions/workflows/deploy.yml)
-[![Code Coverage](https://abhijeetjha0.github.io/abhijeetjha0/coverage/badge.svg)](https://abhijeetjha0.github.io/abhijeetjha0/coverage/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/abhijeetjha0)
-[![Website](https://img.shields.io/badge/Live_Portfolio-2563EB?style=flat&logo=firefox&logoColor=white)](https://abhijeetjha0.github.io/abhijeetjha0/)
-[![Email](https://img.shields.io/badge/Email-abhijeetjha0%40hotmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:abhijeetjha0@hotmail.com)
+[![Website](https://img.shields.io/badge/Live_Portfolio-EAB308?style=flat&logo=firefox&logoColor=white)](https://abhijeetjha0.github.io/abhijeetjha0/)
+[![Email](https://img.shields.io/badge/Email-abhijeetjha0%40hotmail.com-10B981?style=flat&logo=gmail&logoColor=white)](mailto:abhijeetjha0@hotmail.com)
 
 ---
 
 ## 👨‍💻 About Me
 
-Senior Software Engineer with **5+ years of experience** leading UI development and crafting high-performance, responsive web applications. Specialized in **React, TypeScript, Ember.js, and Modern Frontend Tooling**. Passionate about performance optimization, web accessibility (a11y), internationalization/localization (l10n/i18n), and cross-browser extensions.
+Senior Software Engineer with **6+ years of experience** leading UI development and crafting high-performance, responsive web applications. Specialized in **React, TypeScript, Ember.js, and Modern Frontend Tooling**. Passionate about performance optimization, web accessibility (a11y), internationalization/localization (l10n/i18n), and cross-browser extensions.
 
 - 📍 **Location**: Jaipur, India
 - 💼 **Current Role**: Senior Software Engineer @ Metacube Software
