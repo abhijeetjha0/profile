@@ -1,9 +1,18 @@
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 
+interface ExperienceItem {
+  role: string;
+  company: string;
+  period: string;
+  location: string;
+  highlights?: string[];
+}
+
 export default function Experience() {
   const { t } = useTranslation();
-  const experiences = t('experience', { returnObjects: true }) as any[];
+  const rawExperiences = t('experience', { returnObjects: true });
+  const experiences: ExperienceItem[] = Array.isArray(rawExperiences) ? rawExperiences : [];
 
   return (
     <section id="experience" className="py-5">
@@ -22,11 +31,13 @@ export default function Experience() {
                   <p>{exp.location}</p>
                 </Col>
               </Row>
-              <ul className="mt-3">
-                {exp.highlights.map((highlight: string, hIndex: number) => (
-                  <li key={hIndex} className="mb-2">{highlight}</li>
-                ))}
-              </ul>
+              {exp.highlights && exp.highlights.length > 0 && (
+                <ul className="mt-3">
+                  {exp.highlights.map((highlight: string, hIndex: number) => (
+                    <li key={hIndex} className="mb-2">{highlight}</li>
+                  ))}
+                </ul>
+              )}
             </Card.Body>
           </Card>
         ))}

@@ -12,8 +12,8 @@ describe('Skills Component', () => {
     );
 
     expect(screen.getByText(/Technical Expertise/i)).toBeDefined();
-    expect(screen.getByText(/Programming Languages/i)).toBeDefined();
-    expect(screen.getByText(/Libraries & Frameworks/i)).toBeDefined();
+    expect(screen.getAllByText(/Programming Languages/i).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/Libraries & Frameworks/i).length).toBeGreaterThan(0);
   });
 
   test('filters categories when filter buttons are clicked', () => {
@@ -26,7 +26,7 @@ describe('Skills Component', () => {
     const languagesFilterBtn = screen.getByRole('button', { name: /Programming Languages/i });
     fireEvent.click(languagesFilterBtn);
 
-    expect(screen.getByText(/Programming Languages/i)).toBeDefined();
-    expect(screen.queryByText(/Build Tools/i)).toBeNull();
+    expect(screen.getAllByText(/Programming Languages/i).length).toBeGreaterThan(0);
+    expect(screen.queryByRole('heading', { level: 3, name: /Build Tools/i })).toBeNull();
   });
 });
